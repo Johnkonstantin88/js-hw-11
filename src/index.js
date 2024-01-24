@@ -1,5 +1,3 @@
-// var ghpages = require('gh-pages');
-// ghpages.publish('build', function(err) {});
 import './main.scss';
 
 function component(text) {
