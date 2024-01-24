@@ -1,0 +1,5 @@
+html{font-size:1rem;color:rgb(143, 0, 22)}
+
+@media (color-gamut: p3){
+html{color:color(display-p3 0.52982 0 0.08599)}
+}
