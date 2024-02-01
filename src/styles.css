@@ -1,0 +1,118 @@
+:root {
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-duration: 250ms;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 40px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(51, 109, 153);
+}
+
+input {
+    outline: none;
+    border-radius: 2px;
+    border: solid 1px #f2f2f2;
+}
+
+input:focus {
+    border: solid 1px rgb(30, 46, 44);
+}
+
+button {
+    border-radius: 2px;
+    border: solid 1px #f2f2f2;
+}
+
+button:hover {
+    border: solid 1px rgb(30, 46, 44);
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    width: 235px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1140px;
+    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-rows: 240px;
+    grid-gap: 12px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+}
+
+.photo-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    list-style: none;
+}
+
+.gallery__image:hover {
+    transform: scale(1.03);
+}
+
+.gallery__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform var(--animation-duration) var(--timing-function);
+}
+
+.gallery__link {
+    display: block;
+    text-decoration: none;
+    height: 100%;
+}
+
+.gallery__link:hover {
+    cursor: zoom-in;
+}
+
+.info {
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: rgb(229, 226, 224);
+}
+
+p {
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
+    
+
+}
